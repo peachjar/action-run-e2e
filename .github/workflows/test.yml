@@ -20,6 +20,6 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_DEPLOY_TOKEN }}
         domain: peachjar.com
         target: noop
