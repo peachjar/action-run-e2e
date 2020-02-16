@@ -52,11 +52,10 @@ export default async function run(
             },
         })
 
-        core.info(`Deployment status set`)
+        core.info(`e2e tests triggered.`)
 
     } catch (error) {
 
-        console.log(error)
         core.setFailed(error.message)
     }
 }
