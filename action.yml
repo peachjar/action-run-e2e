@@ -1,0 +1,16 @@
+name: 'Run e2e tests'
+description: 'Run End-to-End Tests against one our target environments.'
+author: 'Peachjar Engineering'
+inputs:
+  token:
+    required: true
+    description: Github token use to interact with the API.
+  domain:
+    required: true
+    description: The DNS domain of the environment to test.
+  target:
+    required: false
+    description: The Docker tag of the test image to run (will use latest release if not supplied).
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
