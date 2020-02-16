@@ -23222,6 +23222,7 @@ function run(GitHubC, core) {
             core.info(`Deployment status set`);
         }
         catch (error) {
+            console.log(error);
             core.setFailed(error.message);
         }
     });
